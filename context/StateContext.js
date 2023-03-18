@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
-import product from '../sanity_ecommerce/schemas/product';
 
 const Context = createContext();
 
@@ -83,9 +82,13 @@ export const StateContext = ({ children }) => {
             showCart,
             setShowCart,
             cartItems,
+            setCartItems,
             totalPrice,
+            setTotalPrice,
             totalQuantities,
+            setTotalQuantities,
             qty,
+            setQty,
             incQty,
             decQty,
             onAdd,
